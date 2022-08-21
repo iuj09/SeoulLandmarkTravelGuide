@@ -6,6 +6,6 @@ spring:
       authentication-database: admin
       username: mongo
       password: mongo
-      database: crawling
+      database: crwaling
 #      uri: mongodb://mongo:mongo@3.34.1.151:27018/admin
 
