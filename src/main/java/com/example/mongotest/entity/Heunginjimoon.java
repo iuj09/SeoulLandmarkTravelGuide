@@ -4,8 +4,6 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.DiscriminatorValue;
-
 
 @Document(collection = "heunginjimoon")
 //@DiscriminatorValue(value = "heunginjimoon")
@@ -14,11 +12,11 @@ import javax.persistence.DiscriminatorValue;
 public class Heunginjimoon {
 
     private String id;
-    private String name;
-    private Float score;
-    private Long review;
-    private String link;
-    private String addr;
+    private String Name;
+    private Float Score;
+    private Long Review;
+    private String Link;
+    private String Addr;
     private Float lat;
     private Float lng;
 

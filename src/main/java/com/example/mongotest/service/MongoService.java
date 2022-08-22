@@ -38,7 +38,7 @@ public class MongoService {
     }
 
     public MongoResponseDTO.GwanghwamoonDTO getGwanghwamoonList() {
-        List<Gwanghwamoon> gwanghwamoonList = jamsilRepository.findAll();
+        List<Gwanghwamoon> gwanghwamoonList = gwanghwamoonRepository.findAll();
         return new MongoResponseDTO.GwanghwamoonDTO(gwanghwamoonList);
     }
 

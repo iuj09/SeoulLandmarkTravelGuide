@@ -10,12 +10,13 @@ public class MongoResponseDTO {
 
 //    private List<Landmark> lmList;
 //    public MongoResponseDTO(List<Landmark> list) { this.lmList = list; }
+
     @Getter
     @Setter
     public static class JamsilDTO {
         private List<Jamsil> jamsilList;
-        public JamsilDTO(List<Jamsil> list) {
-            this.jamsilList = list;
+        public JamsilDTO(List<Jamsil> jamsilList) {
+            this.jamsilList = jamsilList;
         }
     }
 
@@ -23,8 +24,8 @@ public class MongoResponseDTO {
     @Setter
     public static class DeoksugungDTO {
         private List<Deoksugung> deoksugungList;
-        public DeoksugungDTO(List<Deoksugung> list) {
-            this.deoksugungList = list;
+        public DeoksugungDTO(List<Deoksugung> deoksugungList) {
+            this.deoksugungList = deoksugungList;
         }
     }
 
@@ -32,8 +33,8 @@ public class MongoResponseDTO {
     @Setter
     public static class GwanghwamoonDTO {
         private List<Gwanghwamoon> gwanghwamoonList;
-        public GwanghwamoonDTO(List<Gwanghwamoon> list) {
-            this.gwanghwamoonList = list;
+        public GwanghwamoonDTO(List<Gwanghwamoon> gwanghwamoonList) {
+            this.gwanghwamoonList = gwanghwamoonList;
         }
     }
 
@@ -41,8 +42,8 @@ public class MongoResponseDTO {
     @Setter
     public static class YesulDTO {
         private List<Yesul> yesulList;
-        public YesulDTO(List<Yesul> list) {
-            this.yesulList = list;
+        public YesulDTO(List<Yesul> yesulList) {
+            this.yesulList = yesulList;
         }
     }
 
@@ -50,8 +51,8 @@ public class MongoResponseDTO {
     @Setter
     public static class MyeondongcathDTO {
         private List<Myeongdongcath> myeongdongcathList;
-        public MyeondongcathDTO(List<Myeongdongcath> list) {
-            this.myeongdongcathList = list;
+        public MyeondongcathDTO(List<Myeongdongcath> myeongdongcathList) {
+            this.myeongdongcathList = myeongdongcathList;
         }
     }
 
@@ -59,8 +60,8 @@ public class MongoResponseDTO {
     @Setter
     public static class HeunginjimoonDTO {
         private List<Heunginjimoon> heunginjimoonList;
-        public HeunginjimoonDTO(List<Heunginjimoon> list) {
-            this.heunginjimoonList = list;
+        public HeunginjimoonDTO(List<Heunginjimoon> heunginjimoonList) {
+            this.heunginjimoonList = heunginjimoonList;
         }
     }
 
@@ -68,8 +69,9 @@ public class MongoResponseDTO {
     @Setter
     public static class DdpDTO {
         private List<Ddp> ddpList;
-        public DdpDTO(List<Ddp> list) {
-            this.ddpList = list;
+        public DdpDTO(List<Ddp> ddpList) {
+            this.ddpList = ddpList;
         }
     }
+
 }

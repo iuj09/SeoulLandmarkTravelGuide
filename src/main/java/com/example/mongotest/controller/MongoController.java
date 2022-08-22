@@ -6,12 +6,14 @@ import com.example.mongotest.service.MongoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
+@RequestMapping("/landmark")
 public class MongoController {
 
     private final MongoService mongoService;
@@ -22,38 +24,38 @@ public class MongoController {
 //        return (MongoResponseDTO) mongoService.getLandmarkList();
 //    }
 
-    @GetMapping("/landmark/jamsil")
-    public MongoResponseDTO.JamsilDTO getJamsilList() {
+    @GetMapping("/jamsil")
+    public MongoResponseDTO.JamsilDTO findJamsilList() {
         return (MongoResponseDTO.JamsilDTO) mongoService.getJamsilList();
     }
 
-    @GetMapping("/landmark/deoksugung")
-    public MongoResponseDTO.DeoksugungDTO getDeoksugungList() {
+    @GetMapping("/deoksugung")
+    public MongoResponseDTO.DeoksugungDTO findDeoksugungList() {
         return (MongoResponseDTO.DeoksugungDTO) mongoService.getDeoksugungList();
     }
 
-    @GetMapping("/landmark/gwanghwamoon")
-    public MongoResponseDTO.GwanghwamoonDTO getGwanghwamoonList() {
+    @GetMapping("/gwanghwamoon")
+    public MongoResponseDTO.GwanghwamoonDTO findGwanghwamoonList() {
         return (MongoResponseDTO.GwanghwamoonDTO) mongoService.getGwanghwamoonList();
     }
 
-    @GetMapping("/landmark/yesul")
-    public MongoResponseDTO.YesulDTO getYesulList() {
+    @GetMapping("/yesul")
+    public MongoResponseDTO.YesulDTO findYesulList() {
         return (MongoResponseDTO.YesulDTO) mongoService.getyesulList();
     }
 
-    @GetMapping("/landmark/myeongondcath")
-    public MongoResponseDTO.MyeondongcathDTO getMyeondongcathList() {
+    @GetMapping("/myeongondcath")
+    public MongoResponseDTO.MyeondongcathDTO findMyeondongcathList() {
         return (MongoResponseDTO.MyeondongcathDTO) mongoService.getMyeongdongcathList();
     }
 
-    @GetMapping("/landmark/heunginjimoon")
-    public MongoResponseDTO.HeunginjimoonDTO getHeunginjimoonList() {
+    @GetMapping("/heunginjimoon")
+    public MongoResponseDTO.HeunginjimoonDTO findHeunginjimoonList() {
         return (MongoResponseDTO.HeunginjimoonDTO) mongoService.getHeunginjimoonList();
     }
 
-    @GetMapping("/landmark/ddp")
-    public MongoResponseDTO.DdpDTO getDdpList() {
+    @GetMapping("/ddp")
+    public MongoResponseDTO.DdpDTO findDdpList() {
         return (MongoResponseDTO.DdpDTO) mongoService.getDdpList();
     }
 }

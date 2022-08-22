@@ -4,14 +4,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.DiscriminatorColumn;
-import javax.persistence.DiscriminatorType;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
-
 @Document(collection = "landmark")
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "lmname", discriminatorType = DiscriminatorType.STRING)
 @Getter
 @NoArgsConstructor
 public abstract class Landmark {
