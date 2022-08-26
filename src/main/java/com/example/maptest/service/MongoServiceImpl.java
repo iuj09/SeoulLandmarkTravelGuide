@@ -54,30 +54,4 @@ public class MongoServiceImpl{
 
     }
 
-//    @Builder
-//    public ResponseDTO entityToDTO() {
-//
-//        String name = "jamsil";
-//        Landmark landjamsil = getLandmarkName(name);
-//
-//        List<Toilet> toiletList = toiletRepository.findAll();
-//
-//        ResponseDTO responseDTO = ResponseDTO.builder()
-//                .id(jamsil.getId())
-//                .Name(jamsil.getName())
-//                .Score(jamsil.getScore())
-//                .Addr(jamsil.getAddr())
-//                .lat(jamsil.getLat())
-//                .lng(jamsil.getLng())
-//                .lmid(landjamsil.getId())
-//                .lmname(landjamsil.getName())
-//                .lmlat(landjamsil.getLat())
-//                .lmlng(landjamsil.getLng())
-//                .tlid(toiletList.getId())
-//                .tlname(toiletList.getName())
-//                .tllat(toiletList.getLat())
-//                .tllng(toiletList.getLng())
-//                .build();
-//        return jamsilDTO;
-//    }
 }
