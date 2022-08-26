@@ -1,4 +1,4 @@
-package com.example.mongotest;
+package com.example.maptest;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
