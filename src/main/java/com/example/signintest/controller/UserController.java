@@ -1,21 +1,12 @@
 package com.example.signintest.controller;
 
-import com.example.signintest.dto.UserRequestDTO;
-import com.example.signintest.security.JwtTokenProvider;
-import com.example.signintest.entity.User;
-import com.example.signintest.repository.UserRepository;
-import com.example.signintest.service.Helper;
+
 import com.example.signintest.service.UserService;
 import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Controller;
 import org.springframework.validation.Errors;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -29,18 +20,15 @@ import static com.example.signintest.dto.UserRequestDTO.*;
 @Slf4j
 
 @RequiredArgsConstructor
-@RequestMapping("/api")
+@RequestMapping("/user")
 @RestController
 public class UserController {
 
-//    private final PasswordEncoder passwordEncoder;
-//    private final JwtTokenProvider jwtTokenProvider;
-//    private final UserRepository userRepository;
     private final UserService userService;
 
     @ApiOperation(value = "email 과 password 를 입력해 회원가입")
-    @ApiImplicitParam(name = "UserRequestDTO.Signup", value = "회원가입")
-    @PostMapping("/sign-up")
+    @ApiImplicitParam(name = "UserRequestDTO.Signup", value = "회원가입", dataTypeClass = String.class)
+    @PostMapping("/signup")
     public ResponseEntity<?> signUp(@Validated @RequestBody Signup signup, @ApiIgnore Errors errors) {
 
 //        if (errors.hasErrors()) {
@@ -50,7 +38,7 @@ public class UserController {
     }
 
     @ApiOperation(value = "email 과 password 를 입력해 로그인")
-    @ApiImplicitParam(name = "UserRequestDTO.Login", value = "로그인")
+    @ApiImplicitParam(name = "UserRequestDTO.Login", value = "로그인", dataTypeClass = String.class)
     @PostMapping("/login")
     public ResponseEntity<?> login(@Validated @RequestBody Login login, HttpServletResponse response, @ApiIgnore Errors errors) {
 
