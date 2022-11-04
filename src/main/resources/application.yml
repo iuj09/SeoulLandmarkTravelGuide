@@ -5,7 +5,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://cl6-3.cpapn6teevfj.ap-northeast-2.rds.amazonaws.com:3306/userdb?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&serverTimezone=Asia/Seoul
+    url: jdbc:mysql://{rdsendpoint}.rds.amazonaws.com:3306/userdb?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&serverTimezone=Asia/Seoul
     username: cl63
     password: cloud6-3
 
@@ -24,6 +24,7 @@ spring:
     port: 6379
     password: 1234
 
+  # swagger 사용시 설정(spring boot 2.6ver 이후 matching-strategy 값이 path_pattern_parser 변경됨)
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher

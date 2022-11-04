@@ -1,4 +1,4 @@
-package com.example.signintest.security;
+package com.example.userservice.jwt;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
@@ -23,7 +23,6 @@ import java.util.stream.Collectors;
 public class JwtTokenProvider {
 
     private static final String authoritiesKey = "auth";
-//    private static final String bearerType = "Bearer";
     private static final long accessTokenExpireTime = 30 * 60 * 1000L;
     private static final long refreshTokenExpireTime =  24 * 60 * 60 * 7 * 1000L;
 

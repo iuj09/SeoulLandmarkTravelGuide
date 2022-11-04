@@ -1,6 +1,6 @@
-package com.example.signintest.service;
+package com.example.userservice.service;
 
-import com.example.signintest.repository.UserRepository;
+import com.example.userservice.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

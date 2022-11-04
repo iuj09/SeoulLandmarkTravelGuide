@@ -1,10 +1,6 @@
-package com.example.signintest.service;
+package com.example.userservice.service;
 
 import org.springframework.stereotype.Service;
-import org.springframework.validation.Errors;
-
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
 
 @Service
 public class Helper {

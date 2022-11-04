@@ -1,15 +1,12 @@
-package com.example.signintest.service;
+package com.example.userservice.service;
 
-import com.example.signintest.dto.UserRequestDTO;
-import com.example.signintest.entity.User;
-import com.example.signintest.repository.UserRepository;
-import com.example.signintest.security.JwtTokenProvider;
-import lombok.Builder;
-import lombok.Getter;
+import com.example.userservice.dto.UserRequestDTO;
+import com.example.userservice.entity.User;
+import com.example.userservice.repository.UserRepository;
+import com.example.userservice.jwt.JwtTokenProvider;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -17,13 +14,10 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.validation.Errors;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
 import java.util.concurrent.TimeUnit;
 
 

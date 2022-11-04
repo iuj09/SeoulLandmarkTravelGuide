@@ -1,7 +1,7 @@
-package com.example.signintest.controller;
+package com.example.userservice.controller;
 
 
-import com.example.signintest.service.UserService;
+import com.example.userservice.service.UserService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
@@ -15,7 +15,7 @@ import springfox.documentation.annotations.ApiIgnore;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import static com.example.signintest.dto.UserRequestDTO.*;
+import static com.example.userservice.dto.UserRequestDTO.*;
 
 @Slf4j
 

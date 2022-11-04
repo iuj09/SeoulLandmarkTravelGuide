@@ -1,4 +1,4 @@
-package com.example.signintest.dto;
+package com.example.userservice.dto;
 
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiParam;

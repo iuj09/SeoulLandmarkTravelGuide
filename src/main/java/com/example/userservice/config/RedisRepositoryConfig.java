@@ -1,4 +1,4 @@
-package com.example.signintest.config;
+package com.example.userservice.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;

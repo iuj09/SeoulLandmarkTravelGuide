@@ -1,4 +1,4 @@
-package com.example.signintest.enums;
+package com.example.userservice.enums;
 
 public enum Authority {
     ROLE_USER,
