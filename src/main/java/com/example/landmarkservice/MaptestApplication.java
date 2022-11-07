@@ -1,4 +1,4 @@
-package com.example.maptest;
+package com.example.landmarkservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

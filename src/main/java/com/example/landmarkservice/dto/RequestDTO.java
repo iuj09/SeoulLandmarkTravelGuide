@@ -1,4 +1,4 @@
-package com.example.maptest.dto;
+package com.example.landmarkservice.dto;
 
 
 import lombok.Getter;

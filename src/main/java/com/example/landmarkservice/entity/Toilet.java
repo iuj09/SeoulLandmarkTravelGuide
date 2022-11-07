@@ -1,6 +1,6 @@
-package com.example.maptest.entity;
+package com.example.landmarkservice.entity;
 
-import com.example.maptest.dto.ToiletDTO;
+import com.example.landmarkservice.dto.ToiletDTO;
 import lombok.Builder;
 import lombok.Getter;
 import org.springframework.data.mongodb.core.mapping.Document;

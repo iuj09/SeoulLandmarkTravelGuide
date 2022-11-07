@@ -1,14 +1,14 @@
-package com.example.maptest.service;
+package com.example.landmarkservice.service;
 
-import com.example.maptest.dto.LandmarkDTO;
-import com.example.maptest.dto.RequestDTO;
-import com.example.maptest.dto.ResponseDTO;
-import com.example.maptest.entity.Crawling;
-import com.example.maptest.entity.Landmark;
-import com.example.maptest.entity.Toilet;
-import com.example.maptest.repository.CrawlingRepository;
-import com.example.maptest.repository.LandmarkRepository;
-import com.example.maptest.repository.ToiletRepository;
+import com.example.landmarkservice.dto.LandmarkDTO;
+import com.example.landmarkservice.dto.RequestDTO;
+import com.example.landmarkservice.dto.ResponseDTO;
+import com.example.landmarkservice.entity.Crawling;
+import com.example.landmarkservice.entity.Landmark;
+import com.example.landmarkservice.entity.Toilet;
+import com.example.landmarkservice.repository.CrawlingRepository;
+import com.example.landmarkservice.repository.LandmarkRepository;
+import com.example.landmarkservice.repository.ToiletRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -44,12 +44,12 @@ public class MongoService {
 //    public ResponseDTO sendResponse(String loc) {
 //
 //        LandmarkDTO landmarkDTO = getLandmarkName(loc).toDto();
-////        List<Toilet> toiletList = getToiletList();
+//        List<Toilet> toiletList = getToiletList();
 //        Crawling crawlingList = getCrawlingList(loc);
 //
 //        ResponseDTO responseDTO = new ResponseDTO();
 //        responseDTO.setLandmark(landmarkDTO);
-////        responseDTO.setToiletList(toiletList);
+//        responseDTO.setToiletList(toiletList);
 //        responseDTO.setCrawlingList(crawlingList);
 //
 //        return  responseDTO;

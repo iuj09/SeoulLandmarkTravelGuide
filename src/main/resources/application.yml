@@ -1,11 +1,10 @@
 spring:
   data:
     mongodb:
-#      uri: mongodb://mongo:mongo@3.34.1.151:27018
       authentication-database: admin
       database: location
-      uri: mongodb://localhost:27018
-#      host: 3.34.1.151
+      uri: mongodb://mongo:mongo@43.200.169.144:27018
+#      host: 43.200.169.144
 #      port: 27018
 #      username: mongo
 #      password: mongo

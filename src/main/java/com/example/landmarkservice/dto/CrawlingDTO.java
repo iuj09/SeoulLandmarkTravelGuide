@@ -1,18 +1,17 @@
-package com.example.maptest.entity;
+package com.example.landmarkservice.dto;
 
-import com.example.maptest.dto.CrawlingDTO;
+import com.example.landmarkservice.entity.Crawling;
+import com.example.landmarkservice.entity.Info;
 import lombok.Builder;
 import lombok.Getter;
-import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.Setter;
 
 import java.util.List;
 
-
-@Document(collection = "crawling")
 @Getter
+@Setter
 @Builder
-public class Crawling {
-
+public class CrawlingDTO {
 
     private String id;
 //    private String name;
@@ -24,9 +23,8 @@ public class Crawling {
     private String loc;
     private List<Info> info;
 
-
-    public CrawlingDTO toDto() {
-        CrawlingDTO crawlingDTO = CrawlingDTO.builder()
+    private Crawling toEntity() {
+        Crawling crawling = Crawling.builder()
                 .id(id)
 //                .name(name)
 //                .score(score)
@@ -37,6 +35,6 @@ public class Crawling {
                 .loc(loc)
                 .info(info)
                 .build();
-        return crawlingDTO;
+        return crawling;
     }
 }

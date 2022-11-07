@@ -1,7 +1,7 @@
-package com.example.maptest.repository;
+package com.example.landmarkservice.repository;
 
 
-import com.example.maptest.entity.Landmark;
+import com.example.landmarkservice.entity.Landmark;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 

@@ -1,13 +1,11 @@
-package com.example.maptest.controller;
+package com.example.landmarkservice.controller;
 
-import com.example.maptest.dto.RequestDTO;
-import com.example.maptest.service.MongoService;
+import com.example.landmarkservice.dto.RequestDTO;
+import com.example.landmarkservice.service.MongoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.scheduling.support.SimpleTriggerContext;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
@@ -20,7 +18,6 @@ public class MongoController {
 //    public ResponseEntity<?> getLocationList(@PathVariable String loc) {
 //        return ResponseEntity.ok().body(mongoService.sendResponse(loc));
 //    }
-
 
 
     @PostMapping("/result")
