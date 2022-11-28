@@ -3,9 +3,9 @@ spring:
     mongodb:
       authentication-database: admin
       database: location
-      uri: mongodb://mongo:mongo@43.200.169.144:27018
-#      host: 43.200.169.144
-#      port: 27018
+      uri: mongodb://mongo:mongo@{host}:{port}
+#      host: 00.000.000.000
+#      port: 27017
 #      username: mongo
 #      password: mongo
 
