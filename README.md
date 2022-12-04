@@ -1,4 +1,11 @@
 # SeoulLandmarkTravelGuide
+---
+> 랜드마크 사진을 이용한 주변 관광정보 제공 서비스
+
+# 1. 제작 기간
+---
+* 2022년 7월 4일 ~ 9월 21일
+
 
 >![001](https://user-images.githubusercontent.com/96827495/202969794-6190e0c3-e9df-405b-99a5-bd27e89da6bd.JPG)
 
