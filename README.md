@@ -4,7 +4,7 @@
 
 ### ◦ swagger를 사용한 API 문서화
 
-### ◦ 회원정보(이메일, 비밀번호)는 AWS RDS(Mysql)을, RefreshToken의 저장소로 redis를 사용
+### ◦ 회원정보(이메일, 비밀번호)는 AWS RDS(Mysql)를, RefreshToken의 저장소는 redis를 사용
 
 > redis 사용 이유
 > 1. redis는 캐시 서버로 이용할 수 있는 In-Memory DB 중 하나로 DB의 부하를 줄여 속도 저하를 방지할 수 있다.
