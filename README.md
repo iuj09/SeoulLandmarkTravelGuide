@@ -9,6 +9,7 @@
 ## 프로젝트 진행 팀원 및 역할
 >![003](https://user-images.githubusercontent.com/96827495/202970934-9aaf8241-e791-417d-8146-a5a0806f72f2.JPG)
 
+## 시스템 구조
 >![001](https://user-images.githubusercontent.com/96827495/202969794-6190e0c3-e9df-405b-99a5-bd27e89da6bd.JPG)
 
 ## 사용 기술
