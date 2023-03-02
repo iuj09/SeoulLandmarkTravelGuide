@@ -21,4 +21,3 @@
 ### User Server : https://github.com/iuj09/SeoulLandmarkTravelGuide/tree/UserService
 ### Landmark Server : https://github.com/iuj09/SeoulLandmarkTravelGuide/tree/LandmarkService
 ### Landmark WebCrawling : https://github.com/iuj09/SeoulLandmarkTravelGuide/tree/LandmarkWebCrowling
-### API Gateway(Spring Cloud Gateway) : 
